@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" keyboardType="off" id="Y6W-OH-hqX" customClass="ChatViewController" customModule="CollectionViewDiffableCoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pBu-AO-402">
+                                <rect key="frame" x="0.0" y="59" width="393" height="653"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g9L-tr-kSC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4m-Cl-JI8" userLabel="Input View">
+                                <rect key="frame" x="0.0" y="712" width="393" height="106"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-gH-5k4" customClass="GrowingTextView" customModule="CollectionViewDiffableCoreData" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="317" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SW1-6t-Lk2"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="aaaa"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlR-DO-Xf5">
+                                        <rect key="frame" x="0.0" y="67.666666666666629" width="69" height="38.333333333333343"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Photo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF9-PW-8sN">
+                                        <rect key="frame" x="305" y="10" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Cyi-li-ZdN"/>
+                                            <constraint firstAttribute="width" constant="80" id="qYT-mS-0Y5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                        <connections>
+                                            <action selector="sendAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ACv-fa-cRZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5Hw-gH-5k4" secondAttribute="bottom" constant="40" id="66R-Bg-QMa"/>
+                                    <constraint firstItem="5Hw-gH-5k4" firstAttribute="top" secondItem="k4m-Cl-JI8" secondAttribute="top" constant="16" id="Bwu-oG-kiN"/>
+                                    <constraint firstItem="5Hw-gH-5k4" firstAttribute="leading" secondItem="k4m-Cl-JI8" secondAttribute="leading" constant="16" id="S8I-wR-a9K"/>
+                                    <constraint firstAttribute="bottom" secondItem="dF9-PW-8sN" secondAttribute="bottom" constant="16" id="Yjx-tp-vNx"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Hw-gH-5k4" secondAttribute="trailing" constant="60" id="Zfn-Mg-tS2"/>
+                                    <constraint firstAttribute="bottom" secondItem="QlR-DO-Xf5" secondAttribute="bottom" id="qfo-Qg-z76"/>
+                                    <constraint firstAttribute="trailing" secondItem="dF9-PW-8sN" secondAttribute="trailing" constant="8" id="u9d-yc-8l5"/>
+                                    <constraint firstItem="QlR-DO-Xf5" firstAttribute="leading" secondItem="k4m-Cl-JI8" secondAttribute="leading" id="xLp-Ye-4Ae"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <keyboardLayoutGuide key="keyboard" id="XuH-b7-cbs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pBu-AO-402" secondAttribute="trailing" id="7Nd-Zy-tZc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k4m-Cl-JI8" secondAttribute="trailing" id="PQM-EP-zdB"/>
+                            <constraint firstItem="XuH-b7-cbs" firstAttribute="top" secondItem="k4m-Cl-JI8" secondAttribute="bottom" id="PXn-L2-npg"/>
+                            <constraint firstItem="k4m-Cl-JI8" firstAttribute="top" secondItem="pBu-AO-402" secondAttribute="bottom" id="Qoo-xP-rTk"/>
+                            <constraint firstItem="pBu-AO-402" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="j0h-Cp-TmI"/>
+                            <constraint firstItem="k4m-Cl-JI8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vSo-MP-Iid"/>
+                            <constraint firstItem="pBu-AO-402" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vv1-Z4-IlE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="pBu-AO-402" id="3MC-Wu-iMT"/>
+                        <outlet property="growingTextView" destination="5Hw-gH-5k4" id="hv0-kE-IDy"/>
+                        <outlet property="inputWrapView" destination="k4m-Cl-JI8" id="SW2-mv-Xaf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.89312977099236" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
