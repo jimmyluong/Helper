@@ -1,0 +1,160 @@
+Section,KEY,iOS,Android,Notes,English,Japanese
+Common,common_cancel,x,,,Cancel,キャンセル
+,common_close,x,,,Close,閉じる..
+,common_input_placeholder,x,,,Please enter,入力してください
+,common_warning,x,,,Warning,警告
+,common_somethingwrong,x,,,Something went wrong!,何かがうまくいかなかった！
+,common_ok,x,,,OK,わかった
+,common_setting,x,,,Setting,設定
+,common_permission_microphone_title,x,,,"""%@"" Would Like to Access the Microphone","""%@"" マイクにアクセスしたい"
+,common_permission_microphone_message,x,,,"%@ requires access to the microphone so you use your voice to search patient, recording audio , and more.",%@ マイクにアクセスする必要があるため、音声を使用して患者を検索したり、音声を録音したりできます。
+,common_permission_library_title,x,,,"""%@"" Would Like to Access the Library","""％@""ライブラリにアクセスしたい"
+,common_permission_library_message,x,,,%@ requires access to the library so you use your photos,％@はライブラリにアクセスする必要があるため、写真を使用します
+,common_permission_camera_title,x,,,"""%@"" Would Like to Access the Camera","""%@"" カメラにアクセスしたい"
+,common_permission_camera_message,x,,,%@ requires access to the camera so you take a picture medical record,%@ あなたが写真の医療記録を撮るためにカメラへのアクセスが必要です
+,common_photo_library_btn,x,,,Photo Library,フォトライブラリ
+,common_camera_btn,x,,,Camera,カメラ
+,common_dont_support_simulator,x,,,Don't support simulator,シミュレーターをサポートしない
+,common_error_429,x,,,Account locked due to too many failed login attempts. Please re-login in 3 minutes.,ログイン試行の失敗が多すぎるため、アカウントがロックされました。 3分後に再ログインしてください。
+,common_choose_actionsheet,x,,,Choice,選択
+,common_cancel_actionsheet,x,,,Cancel,キャンセル
+,,,,,,
+SignIn,signin_username_placeholder,x,,,Enter username,ログインID
+,signin_password_placeholder,x,,,Enter password,パスワード
+,signin_forgotPassword_button,x,,,Forgot password,ログインID・パスワードをお忘れの方はこちら
+,signin_button,x,,,Login ,ログイン
+,signin_validate_username,x,,,Must including 8 to 50 characters,8〜50文字を含める必要があります
+,signin_validate_password,x,,,Must have at least 8 characters,8文字以上である必要があります
+,signin_verify_roles_acccount,,,,Account don't permission access in mobile,アカウントはモバイルでのアクセスを許可しません
+SignOut,signout_title,x,,,Logout,ログアウト
+Menu,menu_login_account,x,,,Login account,ログインアカウント
+,menu_list_patient,x,,,List patient,患者一覧 
+,menu_list_pending_approval,x,,,List pending appoval,未承認一覧
+,,,,,,
+Patient List,patient_list_title,x,,,Patient List,患者一覧
+,patient_list_clinic_title,x,,,Clinic,診療所
+,patient_list_register_patient,x,,,New patient registration,新規患者登録
+,patient_list_choice_btn,x,,,Choice,選択
+,patient_list_cancel_btn,x,,,Cancel,キャンセル
+,patient_list_search_placeholder,x,,,Search for patients,患者を検索
+,patient_list_age_title,x,,,age,歳
+,patient_list_confirm_title,x,,,Patient List Confirm,未承認一覧
+,patient_list_empty_message,x,,,No search result,検索結果なし
+,,,,,,
+Filter Patient Status,patient_status_temporary,x,,,TEMPORARY,仮登録
+,patient_status_active,x,,,ACTIVE,診療中
+,patient_status_stop,x,,,STOP,一時休止
+,patient_status_end,x,,,END,終了
+,patient_status_hospital,x,,,HOSPITAL,入院中
+,patient_status_dead,x,,,DEAD,死亡
+,patient_status_ambulatory,x,,,AMBULATORY,外来通院
+,patient_status_inpatient,x,,,INPATIENT,入院患者
+,patient_status_title,x,,,Patient Status,ステータス
+,,,,,,
+,,,,,,
+Voice Search ,voice_search_placeholder,x,,,Accepting voice input ...,音声入力受付中…
+,voice_search_google_key_validate,x,,,"%@ secret key does not available,  you must refresh.",%@ 秘密鍵は使用できません。更新する必要があります。
+Create New Patient,create_patient_title,x,,,New Patient Registration,患者新規登録
+,create_patient_name,x,,,Name,名前
+,create_patient_name_placeholder,x,,,Enter name,名前を入力
+,create_patient_name_validate,x,,,Must have at least one characters,少なくとも1文字が必要です
+,create_patient_name_kana,x,,,Name (Kana),名前（ふりがな）
+,create_patient_name_kana_placeholder,x,,,Enter name (kana),名前を入力（ふりがな）
+,create_patient_name_kana_validate,x,,,Must have at least one characters,少なくとも1文字が必要です
+,create_patient_birth_day,x,,,BirthDay,生年月日
+,create_patient_birth_day_validate,x,,,Date of birth must less or equal date present,生年月日は、現在の日付以下である必要があります
+,create_patient_year,x,,,Year,年
+,create_patient_month,x,,,Month,月
+,create_patient_day,x,,,Day,日
+,create_patient_sex,x,,,Sex,性別
+,create_patient_clinic,x,,,Clinic,診療所
+,create_patient_external_id,x,,,External ID,外部ID
+,create_patient_external_placeholder,x,,,Tap to enter,タップして入力
+,create_patient_external_validate,x,,,Must have one number,1つの番号が必要です
+,create_patient_register_btn,x,,,Register,登録する
+,create_patient_male,x,,,Male,男性
+,create_patient_female,x,,,Female,女性
+,create_patient_success_banner,x,,,Registration completed,登録を完了しました
+,,,,,,
+Patient List Record,patient_record_date_examination,x,,,Date Examination,診察日時
+,patient_record_sent_title,x,,,Sent,送信
+,patient_record_consultation_title,x,,,Consultation,診察
+,patient_record_new_examination_btn,x,,,New examination,新規診察
+,,,,,,
+Voice Input Detail,voice_input_detail_clear_btn,x,,,Clear,クリアする
+,voice_input_detail_input_text_placeholder,x,,,Please enter,入力してください
+Patient Details,patient_detail_title,x,,,Patient details,患者詳細
+,patient_detail_title_modified,x,,,Last Modified,最終更新日時
+,patient_detail_title_date_examination,x,,,Date and time of examination,診察日時
+,patient_detail_title_vital,x,,,Vital,バイタル
+,patient_detail_title_image,x,,,Image,画像
+,patient_detail_add_photo_btn,x,,,Add a photo,写真を追加する
+,patient_detail_send_btn,x,,,Send,送信する
+,patient_detail_unregistered,x,,,Unregistered,未登録
+,patient_detail_title_disease,x,,,Disease name,病名
+,examination_detail_vitalBodyTemperature_title,x,,,体温：,体温：
+,examination_detail_vitalBloodPressure_title,x,,,血圧：,血圧：
+,examination_detail_vitalPulse_title,x,,,脈拍：,脈拍：
+,examination_detail_vitalSpO2_title,x,,,SpO2：,SpO2：
+,examination_detail_objectiveConsciousness_title,x,,,意識：,意識：
+,examination_detail_objectiveBreathing_title,x,,,呼吸：,呼吸：
+,examination_detail_objectiveAbdomen_title,x,,,腹部：,腹部：
+,examination_detail_objectiveCirculation_title,x,,,循環：,循環：
+,examination_detail_objectiveGastrostomy_title,x,,,胃瘻：,胃瘻：
+,,,,,,
+,,,,,,
+Create Medical Examination Detail,create_examination_title,x,,,Patient details,患者詳細
+,create_examination_unregistered,x,,,Unregistered,未登録
+,create_examination_last_update,x,,,Last updated: %@,最終更新日時：%@
+,create_examination_date,x,,,Date and time of examination,診察日時
+,create_examination_vital,x,,,Vital,バイタル
+,create_examination_subjective,x,,,S,S
+,create_examination_objective,x,,,O,O
+,create_examination_assessment,x,,,A,A
+,create_examination_plan,x,,,P,P
+,create_examination_disease,x,,,Disease name,病名
+,create_examination_image,x,,,Image,画像
+,create_examination_add_photo,x,,,Add a photo,写真を追加する
+,create_examination_section_placeholder,x,,,Tap to enter,タップして入力
+,create_examination_section_validate,x,,,Show error wording here,こちらにエラー文言を表示
+,create_examination_send_btn,x,,,Send,送信する
+,create_examination_preview_btn,x,,,Preview,プレビュー
+,create_examination_banner_completed,x,,,The transmission is completed,送信を完了しました
+,create_alert_add_photo_title,x,,,Add a photo,写真を追加する
+,create_alert_add_photo_message,x,,,Choose a filetype to add,追加するファイルタイプを選択してください
+,,,,,,
+Patient Examination Preview,examination_preview_title,x,,,Patient details,患者詳細
+,examination_preview_date,x,,,Date and time of examination,診察日時
+,examination_preview_last_updated,x,,,Last updated: %@,最終更新日時：%@
+,examination_preview_vital,x,,,Vital,バイタル
+,examination_preview_subjective,x,,,S,S
+,examination_preview_objective,x,,,O,O
+,examination_preview_assessment,x,,,A,A
+,examination_preview_plan,x,,,P,P
+,examination_preview_disease,x,,,Disease name,病名
+,examination_preview_image,x,,,Image,画像
+,examination_preview_approve_btn,x,,,Approve,承認する
+,examination_preview_cancel_btn,x,,,Cancellation of approval,承認キャンセル
+,examination_preview_cancel_title,x,,,Cancel comment,キャンセルコメント
+,examination_preview_cancel_description,x,,,"In case of cancellation of approval, please write a comment.",承認キャンセルの場合、コメント記載してください。
+,examination_preview_cancel_placeholder,x,,,Please change the correction of 〇〇 part to the best. Enter a cancellation comment.,"〇〇箇所の修正をバツバツに変更お願いします。
+キャンセルコメントを入力。"
+,examination_preview_applicant,x,,,Applicant: %@,申請者：%@
+,examination_preview_banner,x,,,Preview display,プレビュー表示中
+,examination_preview_alert_error_title,x,,,Approval cancellation is not successful.,承認キャンセルは成功しません。
+,examination_preview_alert_error_message,x,,,"In case of cancellation of approval, it is necessary to write a comment.",承認キャンセルの場合、コメント記載する必要です。
+,examination_preview_vitalBodyTemperature_title,x,,,Body Temperature: ,体温：
+,examination_preview_vitalBloodPressure_title,x,,,Blood Pressure: ,血圧：
+,examination_preview_vitalPulse_title,x,,,Pulse: ,脈拍：
+,examination_preview_vitalSpO2_title,x,,,SpO2：,SpO2：
+,examination_preview_objectiveConsciousness_title,x,,,Consciousess: ,意識：
+,examination_preview_objectiveBreathing_title,x,,,Breathing: ,呼吸：
+,examination_preview_objectiveAbdomen_title,x,,,Abdomen: ,腹部：
+,examination_preview_objectiveCirculation_title,x,,,Circulation: ,循環：
+,examination_preview_objectiveGastrostomy_title,x,,,Gastrostomy: ,胃瘻：
+,examintaion_preview_btn_has_changed,x,,,Has Update,更新あり
+Compare Medical Examination,compare_medical_examination_date_time,x,,,Application text %@,申請テキスト %@
+,compare_medical_examination_admin_account,x,,,Applicant: %@,申請者：%@
+,compare_medical_examination_mobile_account,x,,,Applicant: %@,送信者：%@
+,,,,,,
+Medical Examination Detail,medical_examination_detail_editor_name,x,,,%@ is editing,%@ さんが編集中です

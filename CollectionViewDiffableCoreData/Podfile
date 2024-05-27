@@ -6,5 +6,6 @@ target 'CollectionViewDiffableCoreData' do
   use_frameworks!
 
   pod 'IQKeyboardManagerSwift'
+  pod 'LanguageManager-iOS'
 
 end

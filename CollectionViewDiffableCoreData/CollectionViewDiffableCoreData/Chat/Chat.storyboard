@@ -17,19 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pBu-AO-402">
-                                <rect key="frame" x="0.0" y="59" width="393" height="653"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g9L-tr-kSC">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4m-Cl-JI8" userLabel="Input View">
-                                <rect key="frame" x="0.0" y="712" width="393" height="106"/>
+                                <rect key="frame" x="0.0" y="741.33333333333337" width="393" height="110.66666666666663"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-gH-5k4" customClass="GrowingTextView" customModule="CollectionViewDiffableCoreData" customModuleProvider="target">
                                         <rect key="frame" x="16" y="16" width="317" height="50"/>
@@ -51,13 +40,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlR-DO-Xf5">
-                                        <rect key="frame" x="0.0" y="67.666666666666629" width="69" height="38.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="72.333333333333258" width="69" height="38.333333333333343"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Photo"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF9-PW-8sN">
-                                        <rect key="frame" x="305" y="10" width="80" height="80"/>
+                                        <rect key="frame" x="305" y="14.666666666666629" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Cyi-li-ZdN"/>
@@ -82,12 +71,24 @@
                                     <constraint firstItem="QlR-DO-Xf5" firstAttribute="leading" secondItem="k4m-Cl-JI8" secondAttribute="leading" id="xLp-Ye-4Ae"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pBu-AO-402">
+                                <rect key="frame" x="0.0" y="59" width="393" height="682.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g9L-tr-kSC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <keyboardLayoutGuide key="keyboard" id="XuH-b7-cbs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pBu-AO-402" secondAttribute="trailing" id="7Nd-Zy-tZc"/>
+                            <constraint firstItem="pBu-AO-402" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.860343" id="BB8-Yr-YiV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k4m-Cl-JI8" secondAttribute="trailing" id="PQM-EP-zdB"/>
                             <constraint firstItem="XuH-b7-cbs" firstAttribute="top" secondItem="k4m-Cl-JI8" secondAttribute="bottom" id="PXn-L2-npg"/>
                             <constraint firstItem="k4m-Cl-JI8" firstAttribute="top" secondItem="pBu-AO-402" secondAttribute="bottom" id="Qoo-xP-rTk"/>

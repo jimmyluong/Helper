@@ -1,0 +1,18 @@
+# This is a sample configuration file
+
+###################################### Base2CSV ######################################
+
+## required, location of strings files (FILENAMES)
+filenames: ["test/data/test_en.strings", "test/data/test_fr.strings"]
+
+## required
+filename: "Localized.csv"   # CSV file (CSV_FILENAME) to convert from or name of file in Google Drive
+langs:  
+  "English": "en"
+  "Vietnamese": "vi"
+  "Korean": "ko"
+default_lang: "English"                      # Header name of column containing fallback value if value is empty
+output_dir: "CollectionViewDiffableCoreData/Resources/Localized"                      # Path of output files
+output_basenames:                       # Basename of output files
+ - Localizable
+sheet: 0                                # Index of worksheet to download. First index is 0.

@@ -1,16 +1,20 @@
 PODS:
   - IQKeyboardManagerSwift (7.0.3)
+  - LanguageManager-iOS (1.2.7)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - LanguageManager-iOS
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - LanguageManager-iOS
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: f9c5dc36cba16ddd2e51fa7d51c34a2e083029b5
+  LanguageManager-iOS: 6b2dbb3793445827114708f0759b76e96932d7c8
 
-PODFILE CHECKSUM: 14b314fb4f14496397662cf231839335c861beee
+PODFILE CHECKSUM: 8f5a2787e242118fc6ab85c6cb41c48233540c46
 
 COCOAPODS: 1.15.2
